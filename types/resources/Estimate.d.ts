@@ -1,4 +1,7 @@
 ///<reference path='./../core.d.ts'/>
+///<reference path='./CreditNoteEstimate.d.ts'/>
+///<reference path='./InvoiceEstimate.d.ts'/>
+///<reference path='./SubscriptionEstimate.d.ts'/>
 declare module 'chargebee' {
   export interface Estimate {
     

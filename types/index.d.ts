@@ -1,3 +1,4 @@
+///<reference path='./core.d.ts' />
 ///<reference path='./resources/Address.d.ts' />
 ///<reference path='./resources/AttachedItem.d.ts' />
 ///<reference path='./resources/Card.d.ts' />
@@ -43,7 +44,7 @@
 
 declare module 'chargebee' {
   class Chargebee {
-    static configure({ site, api_key }: { site: string; api_key: string });
+    static configure({ site, api_key }: { site: string; api_key: string }): void;
     static address: Address.AddressResource;
     static attached_item: AttachedItem.AttachedItemResource;
     static card: Card.CardResource;

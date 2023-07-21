@@ -1,4 +1,7 @@
 ///<reference path='./../core.d.ts'/>
+///<reference path='./QuotedCharge.d.ts'/>
+///<reference path='./QuotedSubscription.d.ts'/>
+///<reference path='./QuoteLineGroup.d.ts'/>
 declare module 'chargebee' {
   export interface Quote {
     
@@ -150,7 +153,7 @@ declare module 'chargebee' {
       next_offset?:string;
     }
     export interface QuoteLineGroupsForQuoteInputParam {
-      [key: string]: string | number | object | boolean;
+      [key: string]: string | number | object | boolean | undefined;
       limit?:number;
       offset?:string;
     }
@@ -215,7 +218,7 @@ declare module 'chargebee' {
       next_offset?:string;
     }
     export interface ListInputParam {
-      [key: string]: string | number | object | boolean;
+      [key: string]: string | number | object | boolean | undefined;
       limit?:number;
       offset?:string;
       include_deleted?:boolean;

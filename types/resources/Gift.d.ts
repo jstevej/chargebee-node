@@ -60,7 +60,7 @@ declare module 'chargebee' {
       next_offset?:string;
     }
     export interface ListInputParam {
-      [key: string]: string | number | object | boolean;
+      [key: string]: string | number | object | boolean | undefined;
       limit?:number;
       offset?:string;
       status?:{in?:string,is?:'expired' | 'scheduled' | 'unclaimed' | 'claimed' | 'cancelled',is_not?:'expired' | 'scheduled' | 'unclaimed' | 'claimed' | 'cancelled',not_in?:string};

@@ -22,7 +22,7 @@ declare module 'chargebee' {
       next_offset?:string;
     }
     export interface ItemEntitlementsForFeatureInputParam {
-      [key: string]: string | number | object | boolean;
+      [key: string]: string | number | object | boolean | undefined;
       limit?:number;
       offset?:string;
     }
@@ -39,7 +39,7 @@ declare module 'chargebee' {
       next_offset?:string;
     }
     export interface ItemEntitlementsForItemInputParam {
-      [key: string]: string | number | object | boolean;
+      [key: string]: string | number | object | boolean | undefined;
       limit?:number;
       offset?:string;
     }

@@ -73,7 +73,7 @@ declare module 'chargebee' {
       next_offset?:string;
     }
     export interface ListInputParam {
-      [key: string]: string | number | object | boolean;
+      [key: string]: string | number | object | boolean | undefined;
       limit?:number;
       offset?:string;
       include_deleted?:boolean;
@@ -117,7 +117,7 @@ declare module 'chargebee' {
       next_offset?:string;
     }
     export interface PaymentsForInvoiceInputParam {
-      [key: string]: string | number | object | boolean;
+      [key: string]: string | number | object | boolean | undefined;
       limit?:number;
       offset?:string;
     }

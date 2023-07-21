@@ -1,4 +1,5 @@
 ///<reference path='./../core.d.ts'/>
+///<reference path='./ThirdPartyPaymentMethod.d.ts'/>
 declare module 'chargebee' {
   export interface Card {
     

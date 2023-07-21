@@ -35,7 +35,7 @@ declare module 'chargebee' {
       next_offset?:string;
     }
     export interface Payment_vouchersForCustomerInputParam {
-      [key: string]: string | number | object | boolean;
+      [key: string]: string | number | object | boolean | undefined;
       limit?:number;
       offset?:string;
       status?:{in?:string,is?:'consumed' | 'expired' | 'failure' | 'active',is_not?:'consumed' | 'expired' | 'failure' | 'active',not_in?:string};
@@ -46,7 +46,7 @@ declare module 'chargebee' {
       next_offset?:string;
     }
     export interface Payment_vouchersForInvoiceInputParam {
-      [key: string]: string | number | object | boolean;
+      [key: string]: string | number | object | boolean | undefined;
       limit?:number;
       offset?:string;
       status?:{in?:string,is?:'consumed' | 'expired' | 'failure' | 'active',is_not?:'consumed' | 'expired' | 'failure' | 'active',not_in?:string};

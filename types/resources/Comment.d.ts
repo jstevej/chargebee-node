@@ -30,7 +30,7 @@ declare module 'chargebee' {
       next_offset?:string;
     }
     export interface ListInputParam {
-      [key: string]: string | number | object | boolean;
+      [key: string]: string | number | object | boolean | undefined;
       limit?:number;
       offset?:string;
       entity_type?:'item' | 'product' | 'coupon' | 'addon' | 'item_price' | 'business_entity' | 'subscription' | 'item_family' | 'credit_note' | 'quote' | 'variant' | 'invoice' | 'plan' | 'transaction' | 'customer' | 'order';

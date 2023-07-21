@@ -1,4 +1,6 @@
 ///<reference path='./../core.d.ts'/>
+///<reference path='./Download.d.ts'//>
+///<reference path='./Hierarchy.d.ts'//>
 declare module 'chargebee' {
   export interface CreditNote {
     
@@ -86,7 +88,7 @@ declare module 'chargebee' {
       next_offset?:string;
     }
     export interface ListInputParam {
-      [key: string]: string | number | object | boolean;
+      [key: string]: string | number | object | boolean | undefined;
       limit?:number;
       offset?:string;
       include_deleted?:boolean;

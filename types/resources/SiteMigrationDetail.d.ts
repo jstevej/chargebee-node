@@ -18,7 +18,7 @@ declare module 'chargebee' {
       next_offset?:string;
     }
     export interface ListInputParam {
-      [key: string]: string | number | object | boolean;
+      [key: string]: string | number | object | boolean | undefined;
       limit?:number;
       offset?:string;
       entity_id_at_other_site?:{is?:string,is_not?:string,starts_with?:string};

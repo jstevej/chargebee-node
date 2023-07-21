@@ -1,4 +1,6 @@
 ///<reference path='./../core.d.ts'/>
+///<reference path='./Download.d.ts'/>
+///<reference path='./PaymentReferenceNumber.d.ts'/>
 declare module 'chargebee' {
   export interface Invoice {
     
@@ -187,7 +189,7 @@ declare module 'chargebee' {
       next_offset?:string;
     }
     export interface ListInputParam {
-      [key: string]: string | number | object | boolean;
+      [key: string]: string | number | object | boolean | undefined;
       limit?:number;
       offset?:string;
       include_deleted?:boolean;
@@ -357,7 +359,7 @@ declare module 'chargebee' {
       next_offset?:string;
     }
     export interface ListPaymentReferenceNumbersInputParam {
-      [key: string]: string | number | object | boolean;
+      [key: string]: string | number | object | boolean | undefined;
       limit?:number;
       offset?:string;
       id?:{in?:string,is?:string};

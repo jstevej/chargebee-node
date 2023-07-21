@@ -1,4 +1,5 @@
 ///<reference path='./../core.d.ts'/>
+///<reference path='./AdvanceInvoiceSchedule.d.ts'/>
 declare module 'chargebee' {
   export interface Subscription {
     [key : string] : any;
@@ -217,7 +218,7 @@ declare module 'chargebee' {
       next_offset?:string;
     }
     export interface ListInputParam {
-      [key: string]: string | number | object | boolean;
+      [key: string]: string | number | object | boolean | undefined;
       limit?:number;
       offset?:string;
       include_deleted?:boolean;
@@ -482,7 +483,7 @@ declare module 'chargebee' {
       next_offset?:string;
     }
     export interface ListDiscountsInputParam {
-      [key: string]: string | number | object | boolean;
+      [key: string]: string | number | object | boolean | undefined;
       limit?:number;
       offset?:string;
     }
@@ -491,7 +492,7 @@ declare module 'chargebee' {
       next_offset?:string;
     }
     export interface ContractTermsForSubscriptionInputParam {
-      [key: string]: string | number | object | boolean;
+      [key: string]: string | number | object | boolean | undefined;
       limit?:number;
       offset?:string;
     }
