@@ -43,53 +43,48 @@
 ///<reference path='./resources/VirtualBankAccount.d.ts' />
 
 declare module 'chargebee' {
-  export interface Chargebee {
-    configure({ site, api_key }: { site: string; api_key: string }): void;
-    address: Address.AddressResource;
-    attached_item: AttachedItem.AttachedItemResource;
-    card: Card.CardResource;
-    comment: Comment.CommentResource;
-    coupon: Coupon.CouponResource;
-    coupon_code: CouponCode.CouponCodeResource;
-    coupon_set: CouponSet.CouponSetResource;
-    credit_note: CreditNote.CreditNoteResource;
-    customer: Customer.CustomerResource;
-    differential_price: DifferentialPrice.DifferentialPriceResource;
-    entitlement_override: EntitlementOverride.EntitlementOverrideResource;
-    estimate: Estimate.EstimateResource;
-    event: Event.EventResource;
-    export: Export.ExportResource;
-    feature: Feature.FeatureResource;
-    gift: Gift.GiftResource;
-    hosted_page: HostedPage.HostedPageResource;
-    in_app_subscription: InAppSubscription.InAppSubscriptionResource;
-    invoice: Invoice.InvoiceResource;
-    item: Item.ItemResource;
-    item_entitlement: ItemEntitlement.ItemEntitlementResource;
-    item_family: ItemFamily.ItemFamilyResource;
-    item_price: ItemPrice.ItemPriceResource;
-    non_subscription: NonSubscription.NonSubscriptionResource;
-    order: Order.OrderResource;
-    payment_intent: PaymentIntent.PaymentIntentResource;
-    payment_source: PaymentSource.PaymentSourceResource;
-    payment_voucher: PaymentVoucher.PaymentVoucherResource;
-    portal_session: PortalSession.PortalSessionResource;
-    promotional_credit: PromotionalCredit.PromotionalCreditResource;
-    purchase: Purchase.PurchaseResource;
-    quote: Quote.QuoteResource;
-    resource_migration: ResourceMigration.ResourceMigrationResource;
-    site_migration_detail: SiteMigrationDetail.SiteMigrationDetailResource;
-    subscription: Subscription.SubscriptionResource;
-    subscription_entitlement: SubscriptionEntitlement.SubscriptionEntitlementResource;
-    time_machine: TimeMachine.TimeMachineResource;
-    token: Token.TokenResource;
-    transaction: Transaction.TransactionResource;
-    unbilled_charge: UnbilledCharge.UnbilledChargeResource;
-    usage: Usage.UsageResource;
-    virtual_bank_account: VirtualBankAccount.VirtualBankAccountResource;
-    
-  }
+    export function configure({ site, api_key }: { site: string; api_key: string }): void;
+    export const address: Address.AddressResource;
+    export const attached_item: AttachedItem.AttachedItemResource;
+    export const card: Card.CardResource;
+    export const comment: Comment.CommentResource;
+    export const coupon: Coupon.CouponResource;
+    export const coupon_code: CouponCode.CouponCodeResource;
+    export const coupon_set: CouponSet.CouponSetResource;
+    export const credit_note: CreditNote.CreditNoteResource;
+    export const customer: Customer.CustomerResource;
+    export const differential_price: DifferentialPrice.DifferentialPriceResource;
+    export const entitlement_override: EntitlementOverride.EntitlementOverrideResource;
+    export const estimate: Estimate.EstimateResource;
+    export const event: Event.EventResource;
+    //export const export: Export.ExportResource;
+    export const feature: Feature.FeatureResource;
+    export const gift: Gift.GiftResource;
+    export const hosted_page: HostedPage.HostedPageResource;
+    export const in_app_subscription: InAppSubscription.InAppSubscriptionResource;
+    export const invoice: Invoice.InvoiceResource;
+    export const item: Item.ItemResource;
+    export const item_entitlement: ItemEntitlement.ItemEntitlementResource;
+    export const item_family: ItemFamily.ItemFamilyResource;
+    export const item_price: ItemPrice.ItemPriceResource;
+    export const non_subscription: NonSubscription.NonSubscriptionResource;
+    export const order: Order.OrderResource;
+    export const payment_intent: PaymentIntent.PaymentIntentResource;
+    export const payment_source: PaymentSource.PaymentSourceResource;
+    export const payment_voucher: PaymentVoucher.PaymentVoucherResource;
+    export const portal_session: PortalSession.PortalSessionResource;
+    export const promotional_credit: PromotionalCredit.PromotionalCreditResource;
+    export const purchase: Purchase.PurchaseResource;
+    export const quote: Quote.QuoteResource;
+    export const resource_migration: ResourceMigration.ResourceMigrationResource;
+    export const site_migration_detail: SiteMigrationDetail.SiteMigrationDetailResource;
+    export const subscription: Subscription.SubscriptionResource;
+    export const subscription_entitlement: SubscriptionEntitlement.SubscriptionEntitlementResource;
+    export const time_machine: TimeMachine.TimeMachineResource;
+    export const token: Token.TokenResource;
+    export const transaction: Transaction.TransactionResource;
+    export const unbilled_charge: UnbilledCharge.UnbilledChargeResource;
+    export const usage: Usage.UsageResource;
+    export const virtual_bank_account: VirtualBankAccount.VirtualBankAccountResource;
 
-    const chargebee: Chargebee;
-    export default chargebee;
 }
